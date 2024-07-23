@@ -8,11 +8,11 @@
             "executor": "@nrwl/cypress:cypress",
             "options": {
                 "cypressConfig": "apps/plot-idle-e2e/cypress.json",
-                "devServerTarget": "example-app-angular:serve:development"
+                "devServerTarget": "plot-idle:serve:development"
             },
             "configurations": {
                 "production": {
-                    "devServerTarget": "example-app-angular:serve:production"
+                    "devServerTarget": "plot-idle:serve:production"
                 }
             }
         },
@@ -25,5 +25,5 @@
         }
     },
     "tags": [],
-    "implicitDependencies": ["example-app-angular"]
+    "implicitDependencies": ["plot-idle"]
 }

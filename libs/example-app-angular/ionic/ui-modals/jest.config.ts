@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-    displayName: 'example-app-angular-ionic-ui-modals',
+    displayName: 'plot-idle-ionic-ui-modals',
 
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
     globals: {
@@ -9,7 +9,7 @@ export default {
             stringifyContentPathRegex: '\\.(html|svg)$',
         },
     },
-    coverageDirectory: '../../../../coverage/libs/example-app-angular/ionic/ui-modals',
+    coverageDirectory: '../../../../coverage/libs/plot-idle/ionic/ui-modals',
     transform: {
         '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
     },

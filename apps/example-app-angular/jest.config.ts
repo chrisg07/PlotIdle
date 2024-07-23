@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-    displayName: 'example-app-angular',
+    displayName: 'plot-idle',
 
     setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
     globals: {
@@ -9,7 +9,7 @@ export default {
             stringifyContentPathRegex: '\\.(html|svg)$',
         },
     },
-    coverageDirectory: '../../coverage/apps/example-app-angular',
+    coverageDirectory: '../../coverage/apps/plot-idle',
     transform: {
         '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
     },

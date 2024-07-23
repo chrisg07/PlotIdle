@@ -1,1 +1,1 @@
-export * from './lib/example-app-angular-phaser-ui-modals.module';
+export * from './lib/plot-idle-phaser-ui-modals.module';

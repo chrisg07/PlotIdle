@@ -18,7 +18,7 @@ That's it for the renaming!  Now to test...
 
 ```npm install```
 
-```npx nx run example-app-angular:serve``` (where example-app-angular is the name you replaced with above)
+```npx nx run plot-idle:serve``` (where plot-idle is the name you replaced with above)
 
 You should now load your example app!
 
@@ -97,7 +97,7 @@ Libraries are shareable across libraries and applications. They can be imported 
 
 ## Development server
 
-Run `npx nx run example-app-angular:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `npx nx run plot-idle:serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

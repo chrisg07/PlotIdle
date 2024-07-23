@@ -1,1 +1,1 @@
-export * from './lib/example-app-angular-ionic-ui-modals.module';
+export * from './lib/plot-idle-ionic-ui-modals.module';

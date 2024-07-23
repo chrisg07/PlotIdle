@@ -18,20 +18,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@company-name/example-app-angular/ionic/ui-buttons": [
-        "libs/example-app-angular/ionic/ui-buttons/src/index.ts"
+      "@company-name/plot-idle/ionic/ui-buttons": [
+        "libs/plot-idle/ionic/ui-buttons/src/index.ts"
       ],
-      "@company-name/example-app-angular/ionic/ui-headers": [
-        "libs/example-app-angular/ionic/ui-headers/src/index.ts"
+      "@company-name/plot-idle/ionic/ui-headers": [
+        "libs/plot-idle/ionic/ui-headers/src/index.ts"
       ],
-      "@company-name/example-app-angular/ionic/ui-modals": [
-        "libs/example-app-angular/ionic/ui-modals/src/index.ts"
+      "@company-name/plot-idle/ionic/ui-modals": [
+        "libs/plot-idle/ionic/ui-modals/src/index.ts"
       ],
-      "@company-name/example-app-angular/phaser/singleton": [
-        "libs/example-app-angular/phaser/singleton/src/index.ts"
+      "@company-name/plot-idle/phaser/singleton": [
+        "libs/plot-idle/phaser/singleton/src/index.ts"
       ],
-      "@company-name/example-app-angular/phaser/ui-modals": [
-        "libs/example-app-angular/phaser/ui-modals/src/index.ts"
+      "@company-name/plot-idle/phaser/ui-modals": [
+        "libs/plot-idle/phaser/ui-modals/src/index.ts"
       ],
       "@company-name/shared/data-access-model": [
         "libs/shared/data-access-model/src/index.ts"

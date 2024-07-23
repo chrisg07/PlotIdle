@@ -1,13 +1,13 @@
 {
-  "defaultProject": "example-app-angular",
+  "defaultProject": "plot-idle",
   "projects": {
-    "example-app-angular": {
-      "name": "example-app-angular",
+    "plot-idle": {
+      "name": "plot-idle",
       "integrations": {
         "capacitor": {}
       },
       "type": "angular",
-      "root": "apps/example-app-angular"
+      "root": "apps/plot-idle"
     }
   }
 }

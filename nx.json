@@ -41,7 +41,7 @@
             }
         }
     },
-    "defaultProject": "example-app-angular",
+    "defaultProject": "plot-idle",
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
     "targetDefaults": {
         "build": {

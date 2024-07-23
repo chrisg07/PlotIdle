@@ -12,7 +12,7 @@ This repository will give you a great starting point!
 4. Search + Replace all instances of 'example-app-"frameworkName"' with your app name
 5. Change the folder names for example-app-frameworkName and example-app-frameworkName-e2e to what you named for steps #1 and #2
 6. Search + Replace all instances of 'plot-idle' with your project name
-7. Search + Replace 'company-name' with your company name.  This is the NX project scope that allows you to import libraries using @company-name
+7. Search + Replace 'spectacle-development' with your company name.  This is the NX project scope that allows you to import libraries using @spectacle-development
 
 That's it for the renaming!  Now to test...
 

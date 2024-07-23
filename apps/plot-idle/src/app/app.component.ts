@@ -2,9 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Component, OnDestroy } from '@angular/core';
-import { Event, Warrior } from '@company-name/shared/data-access-model';
-import { PhaserSingletonService } from '@company-name/shared-phaser-singleton';
 import { ModalController } from '@ionic/angular';
+import { Event, Warrior } from '@spectacle-development/shared/data-access-model';
+import { PhaserSingletonService } from '@spectacle-development/shared-phaser-singleton';
 
 import { ShopPageComponent } from './shop/shop.component';
 

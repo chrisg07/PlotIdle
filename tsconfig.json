@@ -18,22 +18,22 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@company-name/plot-idle/ionic/ui-buttons": [
+      "@spectacle-development/plot-idle/ionic/ui-buttons": [
         "libs/plot-idle/ionic/ui-buttons/src/index.ts"
       ],
-      "@company-name/plot-idle/ionic/ui-headers": [
+      "@spectacle-development/plot-idle/ionic/ui-headers": [
         "libs/plot-idle/ionic/ui-headers/src/index.ts"
       ],
-      "@company-name/plot-idle/ionic/ui-modals": [
+      "@spectacle-development/plot-idle/ionic/ui-modals": [
         "libs/plot-idle/ionic/ui-modals/src/index.ts"
       ],
-      "@company-name/plot-idle/phaser/singleton": [
+      "@spectacle-development/plot-idle/phaser/singleton": [
         "libs/plot-idle/phaser/singleton/src/index.ts"
       ],
-      "@company-name/plot-idle/phaser/ui-modals": [
+      "@spectacle-development/plot-idle/phaser/ui-modals": [
         "libs/plot-idle/phaser/ui-modals/src/index.ts"
       ],
-      "@company-name/shared/data-access-model": [
+      "@spectacle-development/shared/data-access-model": [
         "libs/shared/data-access-model/src/index.ts"
       ]
     }

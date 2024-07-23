@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { Component, OnInit } from '@angular/core';
-import { PhaserSingletonService } from '@company-name/shared-phaser-singleton';
+import { PhaserSingletonService } from '@spectacle-development/shared-phaser-singleton';
 
 @Component({
     selector: 'openforge-home',

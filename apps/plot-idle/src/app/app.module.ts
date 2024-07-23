@@ -4,8 +4,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { PhaserSingletonService } from '@company-name/shared-phaser-singleton';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { PhaserSingletonService } from '@spectacle-development/shared-phaser-singleton';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';

@@ -1,5 +1,5 @@
 {
-    "npmScope": "company-name",
+    "npmScope": "spectacle-development",
     "affected": {
         "defaultBase": "develop"
     },

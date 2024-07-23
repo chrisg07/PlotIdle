@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SwordTypeEnum } from '@company-name/shared/data-access-model';
-import { PhaserSingletonService } from '@company-name/shared-phaser-singleton';
 import { ModalController } from '@ionic/angular';
+import { SwordTypeEnum } from '@spectacle-development/shared/data-access-model';
+import { PhaserSingletonService } from '@spectacle-development/shared-phaser-singleton';
 
 @Component({
     selector: 'openforge-shop',

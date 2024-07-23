@@ -15,10 +15,10 @@
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
-            "@company-name/plot-idle/ionic/ui-modals": ["libs/plot-idle/ionic/ui-modals/src/index.ts"],
-            "@company-name/plot-idle/phaser/ui-modals": ["libs/plot-idle/phaser/ui-modals/src/index.ts"],
-            "@company-name/shared-phaser-singleton": ["libs/shared/phaser-singleton/src/index.ts"],
-            "@company-name/shared/data-access-model": ["libs/shared/data-access-model/src/index.ts"]
+            "@spectacle-development/plot-idle/ionic/ui-modals": ["libs/plot-idle/ionic/ui-modals/src/index.ts"],
+            "@spectacle-development/plot-idle/phaser/ui-modals": ["libs/plot-idle/phaser/ui-modals/src/index.ts"],
+            "@spectacle-development/shared-phaser-singleton": ["libs/shared/phaser-singleton/src/index.ts"],
+            "@spectacle-development/shared/data-access-model": ["libs/shared/data-access-model/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

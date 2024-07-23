@@ -11,7 +11,7 @@ This repository will give you a great starting point!
 3. Search + Replace all instances of 'example-app-"frameworkName"-e2e' with your app name (important to do this first)
 4. Search + Replace all instances of 'example-app-"frameworkName"' with your app name
 5. Change the folder names for example-app-frameworkName and example-app-frameworkName-e2e to what you named for steps #1 and #2
-6. Search + Replace all instances of 'openforge-ionic-monorepo-example' with your project name
+6. Search + Replace all instances of 'plot-idle' with your project name
 7. Search + Replace 'company-name' with your company name.  This is the NX project scope that allows you to import libraries using @company-name
 
 That's it for the renaming!  Now to test...
@@ -93,7 +93,7 @@ Run `nx g @nrwl/react:lib my-lib` to generate a library.
 
 > You can also use any of the plugins above to generate libraries as well.
 
-Libraries are shareable across libraries and applications. They can be imported from `@openforge-ionic-monorepo-example/mylib`.
+Libraries are shareable across libraries and applications. They can be imported from `@plot-idle/mylib`.
 
 ## Development server
 

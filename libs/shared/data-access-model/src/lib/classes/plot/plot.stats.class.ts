@@ -1,14 +1,22 @@
-import { Level, Salary, Stat } from '@spectacle-development/shared/data-access-model';
+/* eslint-disable no-magic-numbers */
 
 /**
  * * This class is a list of typed stats that the warrior has
  */
 export class PlotStats {
-    public salary: Salary; // * How much the warrior costs
-    public level: Level; // * Current level
-    public xp: Stat; // TODO - Experience Points - migrate to it's own stat class
+    public width: number;
+    public height: number;
+    public resources: number;
 
-    constructor(data: PlotStats) {
-        console.log('PlotStats', data);
+    constructor() {
+        this.width = this.generateRandomIntegerInRange(2, 5);
+        this.height = this.generateRandomIntegerInRange(2, 5);
+        this.resources = this.generateRandomIntegerInRange(40, 120);
+        console.log('PlotStats', this);
+    }
+
+    private generateRandomIntegerInRange(start: number, end: number): number {
+        const randInRange = Math.random() * (end - start) + start;
+        return Math.ceil(randInRange);
     }
 }

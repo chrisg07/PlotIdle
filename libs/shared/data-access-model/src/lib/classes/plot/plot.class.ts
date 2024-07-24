@@ -10,7 +10,9 @@ export class Plot {
     public name: string = 'Plot ' + Math.floor(Math.random() * 1000).toString(); // * If not passed in default to random name
     public stats: PlotStats; // * The Warrior's Stats
 
-    constructor() {}
+    constructor() {
+        this.stats = new PlotStats();
+    }
 
     /**
      * * Builds respective class asynchronously

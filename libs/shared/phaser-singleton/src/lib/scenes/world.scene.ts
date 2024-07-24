@@ -46,7 +46,7 @@ export class WorldScene extends Phaser.Scene {
      * * Phaser will only call create after all assets in Preload have been loaded
      */
     async create(): Promise<void> {
-        console.log('forge.scene.ts', 'Creating Assets...', this.scale.width, this.scale.height);
+        console.log('world.scene.ts', 'Creating Assets...', this.scale.width, this.scale.height);
 
         // * Setup the Background Image
         this.backgroundImage = this.add.image(0, 0, this.backgroundKey);

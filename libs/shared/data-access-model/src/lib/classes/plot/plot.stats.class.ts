@@ -19,4 +19,16 @@ export class PlotStats {
         const randInRange = Math.random() * (end - start) + start;
         return Math.ceil(randInRange);
     }
+
+    public mineResources(): number {
+        const resourcesToMine = this.generateRandomIntegerInRange(1, this.resources / 100);
+        if (this.resources > resourcesToMine) {
+            this.resources -= resourcesToMine;
+            return resourcesToMine;
+        } else {
+            const lastResources = this.resources;
+            this.resources = 0;
+            return lastResources;
+        }
+    }
 }

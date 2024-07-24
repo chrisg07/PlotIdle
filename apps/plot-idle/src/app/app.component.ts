@@ -16,11 +16,12 @@ import { ShopPageComponent } from './shop/shop.component';
 export class AppComponent implements OnDestroy {
     public actionsHistoryRef: string[]; // * Store all actions on home screen for printing
     public warriors: Warrior[] = []; // * Array of Warriors since they don't currently have a graphic associated
-    public plots: Plot[] = [];
+    public plotsRef: Plot[] = [];
 
     // * for our app template to use the actions History)
     constructor(public phaserInstance: PhaserSingletonService, public modalController: ModalController) {
         this.actionsHistoryRef = PhaserSingletonService.actionsHistory;
+        this.plotsRef = PhaserSingletonService.plots;
     }
 
     public async openShop(): Promise<void> {
@@ -43,7 +44,7 @@ export class AppComponent implements OnDestroy {
     public async createPlot(): Promise<void> {
         console.log('createPlot()');
         const tmpPlot = await Plot.build();
-        this.plots.push(tmpPlot);
+        this.plotsRef.push(tmpPlot);
     }
 
     /**

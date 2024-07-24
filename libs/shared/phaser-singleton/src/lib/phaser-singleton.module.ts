@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ModuleWithProviders, NgModule, NgZone, Optional, SkipSelf } from '@angular/core';
-import { SwordTypeEnum } from '@spectacle-development/shared/data-access-model';
+import { Plot, SwordTypeEnum } from '@spectacle-development/shared/data-access-model';
 import * as Phaser from 'phaser';
 import { Subject } from 'rxjs';
 
@@ -21,6 +21,7 @@ export class PhaserSingletonService {
     private static ngZone: NgZone;
     public static actionsHistory: string[] = []; // * Since phaser is a singleton, let's store the history of actions here for all components.
     public static shopObservable: Subject<SwordTypeEnum> = new Subject<SwordTypeEnum>();
+    public static plots: Plot[] = [];
 
     constructor(private _ngZone: NgZone, @Optional() @SkipSelf() parentModule?: PhaserSingletonService) {
         if (parentModule) {

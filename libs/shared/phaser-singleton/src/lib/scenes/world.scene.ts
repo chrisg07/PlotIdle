@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable no-magic-numbers */
 import { Blacksmith, CheapSword, FancySword, Sword } from '@spectacle-development/shared/data-access-model';
+import { PhaserSingletonService } from '@spectacle-development/shared-phaser-singleton';
 import * as Phaser from 'phaser';
 
 import { ScrollManager } from '../utilities/scroll-manager';
@@ -11,7 +12,9 @@ export class WorldScene extends Phaser.Scene {
     private backgroundImage: Phaser.GameObjects.Image; // * Reference for the background image
     private blackSmith: Blacksmith; // * We only have a single blacksmith in this game
     private scrollManager: ScrollManager; // * Custom openforge utility for handling scroll
+    private triggerTimer: Phaser.Time.TimerEvent;
     public constructedSwords: Sword[] = [];
+    public totalResources: number = 0;
 
     constructor() {
         super({ key: 'preloader' });
@@ -67,6 +70,24 @@ export class WorldScene extends Phaser.Scene {
         this.scrollManager.scrollToCenter();
 
         this.scale.on('resize', this.resize, this);
+
+        this.triggerTimer = this.time.addEvent({
+            callback: this.plotCycle,
+            callbackScope: this,
+            delay: 1000, // 1000 = 1 second
+            loop: true,
+        });
+    }
+
+    public plotCycle(): void {
+        console.log('plotCycle start: ');
+
+        for (const plot of PhaserSingletonService.plots) {
+            this.totalResources += plot.stats.mineResources();
+        }
+
+        console.log('plotCycle end: ', this.totalResources);
+        console.table(PhaserSingletonService.plots);
     }
 
     /**

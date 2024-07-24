@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Component, OnDestroy } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { Event, Warrior } from '@spectacle-development/shared/data-access-model';
+import { Plot, Warrior } from '@spectacle-development/shared/data-access-model';
 import { PhaserSingletonService } from '@spectacle-development/shared-phaser-singleton';
 
 import { ShopPageComponent } from './shop/shop.component';
@@ -16,6 +16,7 @@ import { ShopPageComponent } from './shop/shop.component';
 export class AppComponent implements OnDestroy {
     public actionsHistoryRef: string[]; // * Store all actions on home screen for printing
     public warriors: Warrior[] = []; // * Array of Warriors since they don't currently have a graphic associated
+    public plots: Plot[] = [];
 
     // * for our app template to use the actions History)
     constructor(public phaserInstance: PhaserSingletonService, public modalController: ModalController) {
@@ -39,6 +40,12 @@ export class AppComponent implements OnDestroy {
         this.warriors.push(tmpWarrior);
     }
 
+    public async createPlot(): Promise<void> {
+        console.log('createPlot()');
+        const tmpPlot = await Plot.build();
+        this.plots.push(tmpPlot);
+    }
+
     /**
      * * Creates a Event and applies it to the Warrior
      *
@@ -46,15 +53,6 @@ export class AppComponent implements OnDestroy {
      */
     public async doPushUps(_warrior: Warrior): Promise<void> {
         await _warrior.doPushUps();
-    }
-
-    /**
-     * * Creates a Event and applies it to a random Warrior
-     */
-    public async createEvent(): Promise<void> {
-        // * This function creates an 'experience' event that modifies the Warrior
-        const xpEvent = new Event();
-        console.log('createEvent()', 'value = ', xpEvent.value);
     }
 
     /**
